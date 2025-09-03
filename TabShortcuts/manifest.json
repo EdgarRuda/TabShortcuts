@@ -1,0 +1,39 @@
+{
+  "name": "Tab Shortcuts",
+  "description": "Custom tab navigation with Alt shortcuts.",
+  "version": "0.1.0",
+  "manifest_version": 3,
+
+  "permissions": ["tabs", "sessions"],
+  "background": { "service_worker": "service_worker.js" },
+  "options_page": "options.html",
+
+  "commands": {
+    "prev-tab":   {
+      "suggested_key": { "default": "Alt+A" },
+      "description": "Go to previous tab (wrap)"
+    },
+    "next-tab":   {
+      "suggested_key": { "default": "Alt+S" },
+      "description": "Go to next tab (wrap)"
+    },
+    "toggle-last":{
+      "suggested_key": { "default": "Alt+Q" },
+      "description": "Toggle previously active tab"
+    },
+    "close-tab":  {
+      "suggested_key": { "default": "Alt+W" },
+      "description": "Close current tab"
+    },
+
+    "first-tab":  {
+      "description": "Go to first tab"
+    },
+    "last-tab":   {
+      "description": "Go to last tab"
+    },
+    "new-tab": {
+      "description": "Open a new tab"
+    }
+  }
+}
