@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Shortcuts",
+  "version": "0.3.0",
+  "description": "Custom tab navigation with Alt shortcuts.",
+  
+
+  "applications": {
+    "gecko": {
+      "id": "tabshortcuts@example.com"
+    }
+  },
+
+  "permissions": ["tabs", "sessions"],
+
+  "background": {
+    "scripts": ["service_worker.js"],
+    "persistent": true
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+
+ "commands": {
+  
+
+  "new-tab":     { "suggested_key": { "default": "Alt+E" }, "description": "Open a new tab" },
+  "close-tab":   { "suggested_key": { "default": "Alt+W" }, "description": "Close current tab" },
+  "refresh-page":{ "suggested_key": { "default": "Alt+R" }, "description": "Reload current tab" },
+  "back-page":   { "suggested_key": { "default": "Alt+Z" }, "description": "Go back in tab history" },
+  "forward-page":{ "suggested_key": { "default": "Alt+X" }, "description": "Go forward in tab history" },
+  "reopen-closed": {"suggested_key": { "default": "Alt+T" }, "description": "Reopen last closed tab"},
+  "toggle-last": { "suggested_key": { "default": "Alt+Q" }, "description": "Toggle previously active tab" },
+  "next-tab":    { "suggested_key": { "default": "Alt+S" }, "description": "Go to next tab (wrap)" },
+  "prev-tab":    { "suggested_key": { "default": "Alt+A" }, "description": "Go to previous tab (wrap)" },
+  "first-tab":   { "suggested_key": { "default": "Alt+Shift+A" }, "description": "Go to first tab" },
+  "last-tab":    { "suggested_key": { "default": "Alt+Shift+S" }, "description": "Go to last tab" },
+
+  "tab-1": { "suggested_key": { "default": "Alt+1" }, "description": "Activate tab 1" },
+  "tab-2": { "suggested_key": { "default": "Alt+2" }, "description": "Activate tab 2" },
+  "tab-3": { "suggested_key": { "default": "Alt+3" }, "description": "Activate tab 3" },
+  "tab-4": { "suggested_key": { "default": "Alt+4" }, "description": "Activate tab 4" },
+  "tab-5": { "suggested_key": { "default": "Alt+5" }, "description": "Activate tab 5" },
+  "tab-6": { "suggested_key": { "default": "Alt+6" }, "description": "Activate tab 6" },
+  "tab-7": { "suggested_key": { "default": "Alt+7" }, "description": "Activate tab 7" },
+  "tab-8": { "suggested_key": { "default": "Alt+8" }, "description": "Activate tab 8" },
+  "tab-9": { "suggested_key": { "default": "Alt+9" }, "description": "Activate tab 9" }
+
+}
+}
